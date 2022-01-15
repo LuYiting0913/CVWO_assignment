@@ -15,7 +15,7 @@ const EditSubject = (props) => {
    const id = useParams()
    const [Name, setName] = useState('')
    const [Data, setData] = useState('')
-   const baseUrl = 'http://localhost:3000/api/v1/subjects/' + id.id
+   const baseUrl = '/api/v1/subjects/' + id.id
    axios.get(baseUrl).then(res => {
       setData(res.data)
    })

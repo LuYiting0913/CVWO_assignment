@@ -15,7 +15,7 @@ const AddSubject = () => {
    const [Name, setName] = useState('')
    const [Data, setData] = useState([])
 
-   axios.get('http://localhost:3000/api/v1/subjects/').then(res => {
+   axios.get('/api/v1/subjects/').then(res => {
       setData(res.data)
    })
 
@@ -35,7 +35,7 @@ const AddSubject = () => {
       } else if (Name.length == 0) {
          alert('empty subject name! please input subject name')
       } else {
-         axios.post('http://localhost:3000/api/v1/subjects/', {
+         axios.post('/api/v1/subjects/', {
             code: Code,
             name: Name
          })

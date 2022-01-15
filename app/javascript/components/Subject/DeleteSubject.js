@@ -12,7 +12,7 @@ import Stack from '@mui/material/Stack'
 
 const DeleteSubject = () => {
    const id = useParams()
-   const baseUrl = 'http://localhost:3000/api/v1/subjects/' + id.id
+   const baseUrl = '/api/v1/subjects/' + id.id
 
    
    axios.delete(baseUrl).then(

@@ -16,7 +16,7 @@ import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 
 const DisplaySubject = () => {
-   const baseUrl = 'http://localhost:3000/api/v1/subjects/'
+   const baseUrl = '/api/v1/subjects/'
    const [subject, setsubject] = useState([])
 
    useEffect(() => {

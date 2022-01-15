@@ -15,8 +15,8 @@ import Select from '@mui/material/Select'
 
 const AddGrade = () => {
    const id = useParams()
-   const baseUrl = 'http://localhost:3000/api/v1/students/' + id.id
-   const subjectUrl = 'http://localhost:3000/api/v1/subjects/'
+   const baseUrl = '/api/v1/students/' + id.id
+   const subjectUrl = '/api/v1/subjects/'
    const url = baseUrl + '/grades'
    const [data, setData] = useState({}) 
    const [subject, setSubject] = useState([]) 
