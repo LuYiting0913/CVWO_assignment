@@ -31,7 +31,7 @@ class AddStudent extends React.Component {
       } else if (this.state.gender == ''){
          alert('gender not selected!')
       } else {
-         axios.post('http://localhost:3000/api/v1/students/', {
+         axios.post('https://shrouded-atoll-08958.herokuapp.com/api/v1/students/', {
             name: this.state.name,
             matric: this.state.matric,
             gender: this.state.gender
