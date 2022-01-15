@@ -16,7 +16,7 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 
-const api = axios.create({baseURL: 'http://localhost:3000/api/v1/students'})
+const api = axios.create({baseURL: '/api/v1/students'})
 
 class Student extends React.Component {
    state = {
