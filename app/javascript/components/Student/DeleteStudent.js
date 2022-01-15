@@ -11,7 +11,7 @@ import Stack from '@mui/material/Stack'
 
 const DeleteStudent = (props) => { 
    const id  = useParams()
-   const url = 'http://localhost:3000/api/v1/students/' + id.id
+   const url = '/api/v1/students/' + id.id
      
    axios.delete(url).then(res => {
       console.log('xx')

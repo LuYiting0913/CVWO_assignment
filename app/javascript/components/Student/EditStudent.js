@@ -18,7 +18,7 @@ import AlertTitle from '@mui/material/AlertTitle'
 
 const EditStudent = () => {
    const id = useParams()
-   const url = 'http://localhost:3000/api/v1/students/' + id.id
+   const url = '/api/v1/students/' + id.id
    const [data, setData] = useState({})  
    const [Name, setName] = useState('')
    const [Matric, setMatric] = useState('')

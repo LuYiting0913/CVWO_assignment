@@ -19,9 +19,9 @@ const DisplayStudent = (props) => {
    const [data, setData] = useState({})
    const [grade, setGrade] = useState([])
    const [subject, setSubject] = useState([])
-   const baseUrl = 'http://localhost:3000/api/v1/students/' + id.id
+   const baseUrl = '/api/v1/students/' + id.id
    const gradeUrl = baseUrl + '/grades/'
-   const subjectUrl = 'http://localhost:3000/api/v1/subjects/'
+   const subjectUrl = '/api/v1/subjects/'
 
    const getSubjectName = (code) => {
       let search = subject.filter(subject => subject.code == code)
