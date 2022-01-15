@@ -1,0 +1,11 @@
+<h1>All Students</h1>
+
+<% @student.each do |student| %>
+   <li>
+      <%= student.id %>
+      <%= student.name %>
+      <%= student.matric %> 
+   </li>
+<% end %>
+
+<%= link_to "Add Student", new_students_path %>

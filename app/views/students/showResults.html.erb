@@ -1,0 +1,11 @@
+<h1>Student Results</h1>
+
+<% @results.each do |result| %>
+    <li>
+        <%= result.code %>
+        <%= result.title %>
+        <%= result.score %>
+    </li>
+<% end %>
+
+<%= link_to  "back", root_path %>
